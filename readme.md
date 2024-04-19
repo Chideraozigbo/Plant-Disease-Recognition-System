@@ -1,6 +1,6 @@
 # Plant Disease Diagnosis System
 
-This project is a plant disease diagnosis system that helps identify diseases in plants based on images uploaded by users. It utilizes a pre-trained deep learning model to make predictions about the type of disease affecting the plant.
+This project is a plant disease diagnosis system that helps identify diseases in plants based on images uploaded by users. It utilizes a pre-trained deep learning model to make predictions about the type of disease affecting the plant. This project is done as my final year degree exam for the award of Bachelor of Science in Computer Science.
 
 ## Features
 
@@ -26,9 +26,6 @@ This project is a plant disease diagnosis system that helps identify diseases in
 
 4. Click the "Predict Disease" button to see the diagnosis.
 
-## Example
-
-![Example](example.png)
 
 ## Contributing
 
