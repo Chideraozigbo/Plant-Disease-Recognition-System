@@ -7,6 +7,7 @@ This project is a plant disease diagnosis system that helps identify diseases in
 - Allows users to upload images of plants.
 - Predicts the type of disease affecting the plant.
 - Displays the prediction along with confidence percentage.
+- Give a little recommendation
 
 ## Installation
 
@@ -20,7 +21,8 @@ This project is a plant disease diagnosis system that helps identify diseases in
     pip install -r requirements.txt
     ```
 
-3. Download the pre-trained model and place it in the appropriate directory.
+3. Download the pre-trained model [here](https://github.com/Chideraozigbo/largefiles/blob/main/already_trained_model.keras) and place it in the appropriate directory.
+
 
 ## Usage
 
