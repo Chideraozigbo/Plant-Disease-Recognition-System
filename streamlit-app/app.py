@@ -5,7 +5,7 @@ import cv2
 from keras.models import load_model
 
 # Load the pre-trained model
-load_models = tf.keras.models.load_model('already_trained_model.keras')
+load_models = tf.keras.models.load_model('https://github.com/Chideraozigbo/largefiles/blob/main/already_trained_model.keras')
 
 # Class names for prediction
 class_names = ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy',
