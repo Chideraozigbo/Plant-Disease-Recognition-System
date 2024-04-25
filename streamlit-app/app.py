@@ -44,6 +44,22 @@ if(app_mode=="Home"):
 elif(app_mode=="About"):
     st.header("About")
     st.markdown("""
+                #### Project Description
+                The "Plant Disease Recognition System" is an innovative project developed as a final year endeavor, aiming to revolutionize the agricultural sector by leveraging cutting-edge technology to identify and diagnose diseases in crops accurately and efficiently.
+                
+                **Key Features:**
+                - **Image Recognition:** The system utilizes convolutional neural networks (CNNs) to analyze images of plant leaves and classify them into different disease categories.
+                - **User-Friendly Interface:** Implemented using Streamlit, the interface offers seamless navigation and an intuitive user experience, allowing users to upload images and receive instant diagnoses.
+                - **Recommendation Engine:** Upon identification of a disease, the system provides tailored recommendations and best practices for disease management and prevention, empowering farmers to take proactive measures.
+                
+                #### Implementation Details
+                - **Data Collection and Preprocessing:** A comprehensive dataset comprising thousands of labeled images of healthy and diseased plants was collected and preprocessed. Offline augmentation techniques were applied to enhance the diversity and robustness of the dataset.
+                - **Model Training:** Transfer learning techniques were employed to fine-tune pre-trained CNN architectures such as VGG16 and ResNet50 on the augmented dataset. Hyperparameter tuning and cross-validation were conducted to optimize model performance.
+                - **Deployment:** The trained model was integrated into a Streamlit web application hosted on a cloud server, ensuring accessibility and scalability. The application allows users to upload images of plant leaves, triggering real-time prediction and recommendation generation.
+                
+                #### Impact and Future Directions
+                The Plant Disease Recognition System holds immense potential to revolutionize crop management practices and contribute to global food security. Future enhancements may include expanding the dataset to encompass a broader range of crops and diseases, integrating real-time disease monitoring using IoT devices, and incorporating feedback mechanisms to continuously improve model accuracy.
+                
                 #### About Dataset
                 This dataset is recreated using offline augmentation from the original dataset.The original dataset can be found on this github repo.
                 This dataset consists of about 87K rgb images of healthy and diseased crop leaves which is categorized into 38 different classes.The total dataset is divided into 80/20 ratio of training and validation set preserving the directory structure.
@@ -64,7 +80,7 @@ elif(app_mode=="Disease Recognition"):
     #Predict button
     if(st.button("Predict")):
         st.write("Our Prediction")
-        st.snow()  # Add snow effect
+        st.balloons()  # Add snow effect
         predicted_class_index, prediction_percentage = model_prediction(test_image)
         #Reading Labels
         class_name = ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy',
