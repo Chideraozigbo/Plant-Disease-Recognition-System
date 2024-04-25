@@ -108,4 +108,4 @@ elif app_mode == "Disease Recognition":
                       'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus',
                       'Tomato___healthy']
         predicted_class_name = class_name[predicted_class_index]
-       
+        st.success("Model predicts it's a {} with {:.2f}% confidence.".format(predicted_class_name, prediction_percentage))
