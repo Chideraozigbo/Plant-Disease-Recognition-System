@@ -31,7 +31,7 @@ app_mode = st.sidebar.selectbox("Select Page", ["Home", "About", "Disease Recogn
 # Main Page
 if app_mode == "Home":
     st.header("PLANT DISEASE RECOGNITION SYSTEM PROJECT")
-    image_path = "https://github.com/Chideraozigbo/Plant-Disease-Recognition-System/blob/main/streamlit-app/figure1.jpg"
+    image_path = "https://github.com/Chideraozigbo/Plant-Disease-Recognition-System/blob/4db89d49ed817ead328eedfde8bb35f88568c00a/streamlit-app/figure1.jpg"
     st.image(image_path, use_column_width=True)
     st.markdown("""
     Welcome to the Plant Disease Recognition System! 🌿🔍
@@ -106,55 +106,6 @@ elif app_mode == "Disease Recognition":
                           'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold',
                           'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite',
                           'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
-                          'Tomato___Tomato_mosaic_virus',
-                          'Tomato___healthy']
+                          'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
             predicted_class_name = class_name[predicted_class_index]
-            st.success("Model predicts it's a {} with {:.2f}% confidence.".format(predicted_class_name,
-                                                                                    prediction_percentage))
-            # Recommendations for each class
-            recommendations = {
-                'Apple___Apple_scab': 'Remove and destroy infected leaves. Apply fungicide as needed.',
-                'Apple___Black_rot': 'Prune and destroy infected branches. Apply fungicide as needed.',
-                'Apple___Cedar_apple_rust': 'Prune and destroy infected branches. Apply fungicide as needed.',
-                'Apple___healthy': 'Ensure proper care and maintenance.',
-                'Blueberry___healthy': 'Ensure proper care and maintenance.',
-                'Cherry_(including_sour)___Powdery_mildew': 'Prune and destroy infected branches. Apply fungicide as needed.',
-                'Cherry_(including_sour)___healthy': 'Ensure proper care and maintenance.',
-                'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 'Use disease-resistant varieties. Apply fungicide as needed.',
-                'Corn_(maize)___Common_rust_': 'Plant resistant varieties. Use fungicides if necessary.',
-                'Corn_(maize)___Northern_Leaf_Blight': 'Use resistant varieties. Rotate crops. Apply fungicides as needed.',
-                'Corn_(maize)___healthy': 'Ensure proper care and maintenance.',
-                'Grape___Black_rot': 'Prune and destroy infected branches. Apply fungicide as needed.',
-                'Grape___Esca_(Black_Measles)': 'Prune and destroy infected branches. Apply fungicide as needed.',
-                'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 'Prune and destroy infected branches. Apply fungicide as needed.',
-                'Grape___healthy': 'Ensure proper care and maintenance.',
-                'Orange___Haunglongbing_(Citrus_greening)': 'Remove and destroy infected trees. Use disease-resistant varieties.',
-                'Peach___Bacterial_spot': 'Prune and destroy infected branches. Apply copper-based fungicides.',
-                'Peach___healthy': 'Ensure proper care and maintenance.',
-                'Pepper,_bell___Bacterial_spot': 'Prune and destroy infected branches. Apply copper-based fungicides.',
-                'Pepper,_bell___healthy': 'Ensure proper care and maintenance.',
-                'Potato___Early_blight': 'Practice crop rotation. Apply fungicides as needed.',
-                'Potato___Late_blight': 'Practice crop rotation. Apply fungicides as needed.',
-                'Potato___healthy': 'Ensure proper care and maintenance.',
-                'Raspberry___healthy': 'Ensure proper care and maintenance.',
-                'Soybean___healthy': 'Ensure proper care and maintenance.',
-                'Squash___Powdery_mildew': 'Remove and destroy infected leaves. Apply fungicide as needed.',
-                'Strawberry___Leaf_scorch': 'Prune and destroy infected branches. Apply fungicide as needed.',
-                'Strawberry___healthy': 'Ensure proper care and maintenance.',
-                'Tomato___Bacterial_spot': 'Prune and destroy infected branches. Apply copper-based fungicides.',
-                'Tomato___Early_blight': 'Prune and destroy infected branches. Apply copper-based fungicides.',
-                'Tomato___Late_blight': 'Prune and destroy infected branches. Apply copper-based fungicides.',
-                'Tomato___Leaf_Mold': 'Prune and destroy infected branches. Apply copper-based fungicides.',
-                'Tomato___Septoria_leaf_spot': 'Prune and destroy infected branches. Apply copper-based fungicides.',
-                'Tomato___Spider_mites Two-spotted_spider_mite': 'Use insecticidal soap or neem oil. Ensure proper watering and ventilation.',
-                'Tomato___Target_Spot': 'Prune and destroy infected branches. Apply copper-based fungicides.',
-                'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 'Remove and destroy infected plants. Use disease-resistant varieties.',
-                'Tomato___Tomato_mosaic_virus': 'Remove and destroy infected plants. Use disease-resistant varieties.',
-                'Tomato___healthy': 'Ensure proper care and maintenance.'
-            }
-            # Display recommendation
-            if predicted_class_name in recommendations:
-                recommendation = recommendations[predicted_class_name]
-                st.write("Recommendation:", recommendation)
-            else:
-                st.write("No recommendation available for this class.")
+            st.success("Model predicts it's a {} with {:.2f}% confidence.".format(predicted_class_name, prediction_percentage))
