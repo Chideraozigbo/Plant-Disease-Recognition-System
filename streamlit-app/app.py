@@ -31,7 +31,7 @@ app_mode = st.sidebar.selectbox("Select Page", ["Home", "About", "Disease Recogn
 # Main Page
 if app_mode == "Home":
     st.header("PLANT DISEASE RECOGNITION SYSTEM PROJECT")
-    image_path = "https://github.com/Chideraozigbo/Plant-Disease-Recognition-System/blob/4db89d49ed817ead328eedfde8bb35f88568c00a/streamlit-app/figure1.jpg"
+    image_path = "figure1.jpg"
     st.image(image_path, use_column_width=True)
     st.markdown("""
     Welcome to the Plant Disease Recognition System! 🌿🔍
