@@ -6,7 +6,7 @@ from io import BytesIO
 
 # Tensorflow Model Prediction
 def model_prediction(test_image):
-    model_url = "https://github.com/Chideraozigbo/largefiles/blob/470ed6e615cfbf8685f44e5e19784c049869f074/already_trained_model.keras"
+    model_url = "https://github.com/Chideraozigbo/largefiles/raw/main/already_trained_model.keras"
     try:
         # Download the model file from GitHub
         model_response = requests.get(model_url)
@@ -34,7 +34,7 @@ app_mode = st.sidebar.selectbox("Select Page", ["Home", "About", "Disease Recogn
 # Main Page
 if app_mode == "Home":
     st.header("PLANT DISEASE RECOGNITION SYSTEM PROJECT")
-    image_path = "https://github.com/Chideraozigbo/Plant-Disease-Recognition-System/blob/65f21cbd08ecf1353e9759b3b5d06b535673cadb/streamlit-app/figure1.jpg"
+    image_path = "https://github.com/Chideraozigbo/Plant-Disease-Recognition-System/blob/main/streamlit-app/figure1.jpg"
     st.image(image_path, use_column_width=True)
     st.markdown("""
     Welcome to the Plant Disease Recognition System! 🌿🔍
