@@ -5,7 +5,7 @@ import numpy as np
 #Tensorflow Model Prediction
 def model_prediction(test_image):
     try:
-        model = tf.keras.models.load_model("already_trained_model.keras")
+        model = tf.keras.models.load_model("https://github.com/Chideraozigbo/largefiles/blob/main/already_trained_model.keras")
     except Exception as e:
         st.error(f"Error loading the model: {e}")
     image = tf.keras.preprocessing.image.load_img(test_image,target_size=(128,128))
